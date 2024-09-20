@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="./images/icons8-facebook-48.png" class="logo" />
+
+        <div class="search-box">
+          <img src="./images/search.png" />
+          <input type="text" placeholder="搜尋Facebook" />
+        </div>
+      </div>
+
+      <div class="nav-middle">
+        <ul>
+          <li>
+            <img src="./images/icons8-home-32.png" class="home2" />
+            <img src="./images/icons8-video-24.png" class="video2" />
+            <img src="./images/icons8-shop-24.png" class="shop2" />
+            <img src="./images/icons8-group-32.png" class="group2" />
+            <img src="./images/icons8-game-50.png" class="game2" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <ul>
+          <li>
+            <img src="./images/icons8-menu-30.png " class="tool" />
+            <img src="./images/icons8-bell-24.png" class="tool" />
+            <img src="./images/icons8-message-50.png" class="tool" />
+            <img
+              src="./images/gojo.jpg"
+              class="gojo"
+              onclick="settingsMenuToggle()"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- 下拉式選單 -->
+      <div class="settings-menu">
+        <div id="dark-btn" onclick="darkBtnOnOff()">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./images/gojo.jpg" />
+            <div>
+              <p>詹家銓</p>
+              <a href="#">查看所有個人檔案</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img src="./images/setting.png" class="settings-icon" />
+            <a href="#"
+              >設定和隱私<img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/help.png" class="settings-icon" />
+            <a href="#"
+              >協助和支援<img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/display.png" class="settings-icon" />
+            <a href="#"
+              >顯示方式和無障礙環境<img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/feedback.png" class="settings-icon" />
+            <a href="#"
+              >提供意見回饋<img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/logout.png" class="settings-icon" />
+            <a href="#">登出<img src="./images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- 左邊導覽列 -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="./images/news.png" />最新消息</a>
+          <a href="#"><img src="./images/friends.png" />朋友</a>
+          <a href="#"><img src="./images/group.png" />社團</a>
+          <a href="#"><img src="./images/marketplace.png" />市場</a>
+          <a href="#"><img src="./images/watch.png" />影片</a>
+          <a href="#">顯示更多</a>
+        </div>
+        <div class="shortcut-links">
+          <p>您的捷徑</p>
+          <a href="#"
+            ><img
+              src="./images/shortcut-1.png"
+            />iSpan-MFEE49-前端工程師就業養成班</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-2.png" />WeHelp 軟體工程師求職、徵才</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-3.png" />Front-End Developers Taiwan</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-4.png" />JavaScript 網頁前端工程</a
+          >
+        </div>
+      </div>
+      <!-- 主要內容-->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="./images/upload.png" />
+            <p>建立限時動態</p>
+          </div>
+          <div class="story story2">
+            <img src="./images/pyk.jpg" />
+            <p>潘鈺堃</p>
+          </div>
+          <div class="story story3">
+            <img src="./images/yang.jpg" />
+            <p>顏銘杉</p>
+          </div>
+          <div class="story story4">
+            <img src="./images/gowei.jpg" />
+            <p>陳國崴</p>
+          </div>
+          <div class="story story5">
+            <img src="./images/pan.jpg" />
+            <p>潘玫瑄</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile1">
+            <img src="./images/gojo.jpg" />
+            <div class="textbox">
+              <input type="text" placeholder="家銓，在想些什麼呢?" />
+            </div>
+          </div>
+          <div class="add-post-links">
+            <a href="#"><img src="./images/live-video.png" />直播視訊</a>
+            <a href="#"><img src="./images/photo.png" />相片/影片</a>
+            <a href="#"><img src="./images/feeling.png" />感受/活動</a>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/gojo.jpg" />
+              <div>
+                <p>詹家銓</p>
+                <span>6小時前</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p>好玩遊戲 每天要玩</p>
+          <img src="./images/game.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" />49</div>
+              <div><img src="./images/comments.png" />8</div>
+              <div><img src="./images/share.png" />4</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/gojo.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/hua.jpg" />
+              <div>
+                <p>華家誠</p>
+                <span>9小時前</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p>讚讚讚</p>
+          <img src="./images/game2.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like.png" />87</div>
+              <div><img src="./images/comments.png" />15</div>
+              <div><img src="./images/share.png" />2</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/gojo.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/pyk.jpg" />
+              <div>
+                <p>潘鈺堃</p>
+                <span>18小時前</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p>香噴噴</p>
+          <img src="./images/game2.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like.png" />87</div>
+              <div><img src="./images/comments.png" />15</div>
+              <div><img src="./images/share.png" />2</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/gojo.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/makai.jpg" />
+              <div>
+                <p>陳聖鎧</p>
+                <span>19小時前</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p>讚讚喔</p>
+          <img src="./images/game3.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like.png" />21</div>
+              <div><img src="./images/comments.png" />7</div>
+              <div><img src="./images/share.png" /></div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/gojo.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右邊導覽列 -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>活動</h4>
+          <a href="#">顯示更多</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>16</h3>
+            <span>3月</span>
+          </div>
+          <div class="right-event">
+            <h4>台中寵物展</h4>
+            <p><i class="fa-solid fa-location-dot"></i> 台中市烏日區</p>
+            <a href="#">更多資訊</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>19</h3>
+            <span>7月</span>
+          </div>
+          <div class="right-event">
+            <h4>2024搖滾臺中音樂節</h4>
+            <p><i class="fa-solid fa-location-dot"></i> 台中市烏日區</p>
+            <a href="#">更多資訊</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>廣告</h4>
+          <a href="#">X</a>
+        </div>
+        <img src="./images/ad.jfif" class="slider-ads" />
+
+        <div class="sidebar-title">
+          <h4>聯絡人</h4>
+          <img src="./images/search.png" />
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/makai.jpg" />
+          </div>
+          <p>陳聖鎧</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/qiu.jpg" />
+          </div>
+          <p>邱昱銘</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/candy.jpg" />
+          </div>
+          <p>唐果</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/baby.jpg" />
+          </div>
+          <p>Hui Yu</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/hua.jpg" />
+          </div>
+          <p>華家誠</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
